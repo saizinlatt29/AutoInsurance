@@ -37,7 +37,7 @@ public class AppConfig {
         Properties jpaProperties= new Properties();
         jpaProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.OracleDialect");
         jpaProperties.setProperty("hibernate.show_sql", "true");
-        jpaProperties.setProperty("hibernate.hbm2ddl.auto", "create"); // hbm = hibernate mapping, ddl = data definition language
+        jpaProperties.setProperty("hibernate.hbm2ddl.auto", "update"); // hbm = hibernate mapping, ddl = data definition language
         return jpaProperties;
     }
 }
